@@ -1,0 +1,22 @@
+// Colors
+$primary_color: #3C9FDD;
+$secondary_color: #232F3C;
+$secondary_light_color: #273A4C;
+$text_color: #fff;
+$links_color: #fff;
+$links_hover_color: $primary_color;
+
+// Breakpoints
+$breakpoints: (
+    'xs': 0,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+);
+
+// Animations
+
+$transitions_basic: all 0.3s easy 0s;
+$transition_global: width 0.3s ease-in-out 0s;
+

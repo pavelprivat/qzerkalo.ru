@@ -1,13 +1,9 @@
 import './bootstrap';
 
-
-// particlesJS.load('particles-js', 'assets/particles.json', function() {
-//     console.log('callback - particles.js config loaded');
-// });
-
 const nav = document.querySelector(".sidebar");
-// const header = document.querySelector("header");
-// const body = document.querySelector("body");
+const mask = document.querySelector(".mask");
+
+const body = document.querySelector("body");
 
 if (nav) {
     console.log('nav find' + nav)
@@ -18,20 +14,20 @@ if (nav) {
         toggle.addEventListener("click", () => {
             if (nav.classList.contains("active")) {
                 nav.classList.remove("active");
-                // header.classList.remove("togled-header");
-                // body.style.overflow = "auto";
+                mask.classList.remove("active");
+                body.style.overflow = "auto";
             } else {
                 nav.classList.add("active");
-                header.classList.add("togled-header");
-                // body.style.overflow = "hidden";
+                mask.classList.add("active");
+                body.style.overflow = "hidden";
 
             }
         });
 
         nav.addEventListener("blur", () => {
             nav.classList.remove("active");
-            // header.classList.remove("togled-header");
-            // body.style.overflow = "auto";
+            body.style.overflow = "auto";
+            mask.classList.remove("active");
         });
     }
 }
